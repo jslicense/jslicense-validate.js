@@ -26,6 +26,7 @@
             "field": {
               "enum": [
                 "year",
+                "organization",
                 "owners"
               ]
             },
