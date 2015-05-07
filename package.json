@@ -1,0 +1,32 @@
+{
+  "name": "jslicense-validate",
+  "description": "validate jslicense objects",
+  "version": "0.0.0-prerelease",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
+  "bugs": "https://github.com/jslicense/jslicense-validate/issues",
+  "dependencies": {
+    "jsonschema": "^1.0.1"
+  },
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "jshint": "^2.7.0",
+    "jslicense-isc": "jslicense/jslicense-isc",
+    "jslicense-mit": "jslicense/jslicense-mit",
+    "jslicense-wtfpl": "jslicense/jslicense-wtfpl",
+    "jsmd": "^0.3.0"
+  },
+  "homepage": "https://jslicense.github.io",
+  "keywords": [
+    "jslicense",
+    "license",
+    "validation"
+  ],
+  "license": "Apache-2.0",
+  "main": "source/jslicense-validate.js",
+  "repository": "jslicense/validate",
+  "scripts": {
+    "lint": "jshint source && jscs source",
+    "precommit": "npm run lint && npm run test",
+    "test": "jsmd README.md"
+  }
+}
