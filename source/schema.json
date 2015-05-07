@@ -29,7 +29,7 @@
                 "owners"
               ]
             },
-            "transformation": {
+            "transform": {
               "enum": [
                 "upper"
               ]
