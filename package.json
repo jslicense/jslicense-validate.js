@@ -5,11 +5,20 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
   "bugs": "https://github.com/jslicense/jslicense-validate/issues",
   "dependencies": {
+    "jslicense-apache-2.0": "git://github.com/jslicense/jslicense-apache-2.0",
+    "jslicense-bsd-2-clause": "git://github.com/jslicense/jslicense-bsd-2-clause",
+    "jslicense-bsd-3-clause": "git://github.com/jslicense/jslicense-bsd-3-clause",
+    "jslicense-gpl-3.0": "git://github.com/jslicense/jslicense-gpl-3.0",
+    "jslicense-wtfpl": "git://github.com/jslicense/jslicense-wtfpl",
     "jsonschema": "^1.0.1"
   },
   "devDependencies": {
     "jscs": "^1.13.1",
     "jshint": "^2.7.0",
+    "jslicense-apache-2.0": "jslicense/jslicense-apache-2.0",
+    "jslicense-bsd-2-clause": "jslicense/jslicense-bsd-2-clause",
+    "jslicense-bsd-3-clause": "jslicense/jslicense-bsd-3-clause",
+    "jslicense-gpl-3.0": "jslicense/jslicense-gpl-3.0",
     "jslicense-isc": "jslicense/jslicense-isc",
     "jslicense-mit": "jslicense/jslicense-mit",
     "jslicense-wtfpl": "jslicense/jslicense-wtfpl",
