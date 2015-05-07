@@ -3,6 +3,8 @@ jslicense-validate.js
 
 Validate [jslicense][jslicense] objects.
 
+The package includes and makes use of a [JSON Schema][schema].
+
 <!--js var validate = require('./'); -->
 
 ```js
@@ -25,3 +27,4 @@ validate(require('jslicense-wtfpl')); // => true
 ```
 
 [jslicense]: http://jslicense.org
+[schema]: ./source/schema.json
