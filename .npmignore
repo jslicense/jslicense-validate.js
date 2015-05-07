@@ -4,6 +4,3 @@
 .jshintrc
 .npmignore
 .travis.yml
-build
-documentation
-reference
