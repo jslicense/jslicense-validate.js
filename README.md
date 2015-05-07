@@ -10,12 +10,14 @@ validate([
   ['(c) ', {field: 'year'}, ' ', {field: 'owners'}],
   ['Not a very good license.']
 ]); // => true
-validate(require('jslicense-isc')); // => true
-validate(require('jslicense-mit')); // => true
-validate(require('jslicense-wtfpl')); // => true
+
 validate([
   [{"field":"bad field name"}]
 ]); // => false
+
+validate(require('jslicense-isc')); // => true
+validate(require('jslicense-mit')); // => true
+validate(require('jslicense-wtfpl')); // => true
 ```
 
 [jslicense]: http://jslicense.org
