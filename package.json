@@ -3,13 +3,8 @@
   "description": "validate jslicense objects",
   "version": "0.1.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
-  "bugs": "https://github.com/jslicense/jslicense-validate/issues",
+  "bugs": "https://github.com/jslicense/jslicense-validate.js/issues",
   "dependencies": {
-    "jslicense-apache-2.0": "git://github.com/jslicense/jslicense-apache-2.0",
-    "jslicense-bsd-2-clause": "git://github.com/jslicense/jslicense-bsd-2-clause",
-    "jslicense-bsd-3-clause": "git://github.com/jslicense/jslicense-bsd-3-clause",
-    "jslicense-gpl-3.0": "git://github.com/jslicense/jslicense-gpl-3.0",
-    "jslicense-wtfpl": "git://github.com/jslicense/jslicense-wtfpl",
     "jsonschema": "^1.0.1"
   },
   "devDependencies": {
@@ -32,7 +27,7 @@
   ],
   "license": "Apache-2.0",
   "main": "source/jslicense-validate.js",
-  "repository": "jslicense/validate",
+  "repository": "jslicense/jslicense-validate.js",
   "scripts": {
     "lint": "jshint source && jscs source",
     "precommit": "npm run lint && npm run test",
