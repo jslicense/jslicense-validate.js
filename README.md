@@ -1,4 +1,4 @@
-Validate [jslicense][jslicense] objects.
+Validate [jslicense][jslicense] templates.
 
 The package includes and makes use of a [JSON Schema][schema].
 
