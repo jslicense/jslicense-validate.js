@@ -9,8 +9,6 @@
   },
   "devDependencies": {
     "defence-cli": "^1.0.5",
-    "jscs": "^1.13.1",
-    "jshint": "^2.7.0",
     "jslicense-apache-2.0": "jslicense/jslicense-apache-2.0",
     "jslicense-bsd-2-clause": "jslicense/jslicense-bsd-2-clause",
     "jslicense-bsd-3-clause": "jslicense/jslicense-bsd-3-clause",
@@ -30,8 +28,6 @@
   "main": "source/jslicense-validate.js",
   "repository": "jslicense/jslicense-validate.js",
   "scripts": {
-    "lint": "jshint source && jscs source",
-    "precommit": "npm run lint && npm run test",
     "test": "defence README.md | replace-require-self | node"
   }
 }
