@@ -1,7 +1,5 @@
 Validate [jslicense][jslicense] templates.
 
-The package includes and makes use of a [JSON Schema][schema].
-
 ```javascript
 var validate = require('jslicense-validate')
 var assert = require('assert')
