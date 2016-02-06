@@ -1,5 +1,4 @@
-{
-  "id": "http://jslicense.org/schema.json#",
+{ "id": "http://jslicense.org/schema.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "jslicense",
   "description": "schema for open-source license templates",
@@ -11,37 +10,17 @@
     "items": {
       "description": "arrays describing a line of text",
       "oneOf": [
-        {
-          "description": "non-empty strings",
+        { "description": "non-empty strings",
           "type": "string",
-          "pattern": ".+"
-        },
-        {
-          "description": "field",
+          "pattern": ".+" },
+        { "description": "field",
           "type": "object",
           "properties": {
             "default": {
-              "type": "string"
-            },
+              "type": "string" },
             "field": {
-              "enum": [
-                "year",
-                "organization",
-                "owners"
-              ]
-            },
+              "enum": [ "year", "organization", "owners" ] },
             "transform": {
-              "enum": [
-                "upper"
-              ]
-            }
-          },
-          "required": [
-            "field"
-          ],
-          "additionalProperties": false
-        }
-      ]
-    }
-  }
-}
+              "enum": [ "upper" ] } },
+          "required": [ "field" ],
+          "additionalProperties": false } ] } } }
