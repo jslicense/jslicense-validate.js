@@ -17,6 +17,13 @@
     "jslicense-wtfpl": "jslicense/jslicense-wtfpl",
     "replace-require-self": "^1.1.0"
   },
+  "files": [
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "index.js",
+    "schema.json"
+  ],
   "homepage": "http://jslicense.org",
   "keywords": [
     "jslicense",
