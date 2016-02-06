@@ -8,6 +8,7 @@
     "jsonschema": "^1.0.1"
   },
   "devDependencies": {
+    "defence-cli": "^1.0.5",
     "jscs": "^1.13.1",
     "jshint": "^2.7.0",
     "jslicense-apache-2.0": "jslicense/jslicense-apache-2.0",
@@ -17,7 +18,7 @@
     "jslicense-isc": "jslicense/jslicense-isc",
     "jslicense-mit": "jslicense/jslicense-mit",
     "jslicense-wtfpl": "jslicense/jslicense-wtfpl",
-    "jsmd": "^0.3.0"
+    "replace-require-self": "^1.1.0"
   },
   "homepage": "https://jslicense.github.io",
   "keywords": [
@@ -31,6 +32,6 @@
   "scripts": {
     "lint": "jshint source && jscs source",
     "precommit": "npm run lint && npm run test",
-    "test": "jsmd README.md"
+    "test": "defence README.md | replace-require-self | node"
   }
 }

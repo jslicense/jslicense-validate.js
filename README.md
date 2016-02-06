@@ -2,25 +2,26 @@ Validate [jslicense][jslicense] objects.
 
 The package includes and makes use of a [JSON Schema][schema].
 
-<!--js var validate = require('./'); -->
+```javascript
+var validate = require('jslicense-validate')
+var assert = require('assert')
 
-```js
-validate([
-  ['(c) ', {field: 'year'}, ' ', {field: 'owners'}],
-  ['Not a very good license.']
-]); // => true
+assert(
+  validate(
+    [ [ '(c) ', { field: 'year' }, ' ', { field: 'owners' } ],
+      [ 'Not a very good license.' ] ]))
 
-validate([
-  [{"field":"bad field name"}]
-]); // => false
+assert(
+  !validate(
+    [ [ { 'field': 'bad field name' } ] ]))
 
-validate(require('jslicense-apache-2.0')); // => true
-validate(require('jslicense-bsd-2-clause')); // => true
-validate(require('jslicense-bsd-3-clause')); // => true
-validate(require('jslicense-gpl-3.0')); // => true
-validate(require('jslicense-isc')); // => true
-validate(require('jslicense-mit')); // => true
-validate(require('jslicense-wtfpl')); // => true
+assert(validate(require('jslicense-apache-2.0')))
+assert(validate(require('jslicense-bsd-2-clause')))
+assert(validate(require('jslicense-bsd-3-clause')))
+assert(validate(require('jslicense-gpl-3.0')))
+assert(validate(require('jslicense-isc')))
+assert(validate(require('jslicense-mit')))
+assert(validate(require('jslicense-wtfpl')))
 ```
 
 [jslicense]: http://jslicense.org
