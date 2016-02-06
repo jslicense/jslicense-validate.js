@@ -22,6 +22,11 @@ assert(validate(require('jslicense-gpl-3.0')))
 assert(validate(require('jslicense-isc')))
 assert(validate(require('jslicense-mit')))
 assert(validate(require('jslicense-wtfpl')))
+
+// The JSON Schema itself
+assert.equal(
+  typeof require('jslicense-validate/schema'),
+  'object')
 ```
 
 [jslicense]: http://jslicense.org
