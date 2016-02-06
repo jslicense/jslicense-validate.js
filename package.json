@@ -2,7 +2,7 @@
   "name": "jslicense-validate",
   "description": "validate jslicense objects",
   "version": "0.1.1",
-  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
   "bugs": "https://github.com/jslicense/jslicense-validate.js/issues",
   "dependencies": {
     "jsonschema": "^1.0.1"
